@@ -43,8 +43,16 @@ app.configure('production', function(){
   app.use(express.errorHandler());
 });
 // *******************************************************
-
+//ROUTES
+// start
 app.get("/start", function(req,res) {
  res.render("start.html",{title:"Hello Start!"});   
 });
+// login
+app.get("/login", function(req,res) {
+ res.render("login.html",{title:"Autenticazione"});   
+});
+
+
+
 app.listen(process.env.PORT);
