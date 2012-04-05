@@ -52,7 +52,10 @@ app.get("/start", function(req,res) {
 app.get("/login", function(req,res) {
  res.render("login.html",{title:"Autenticazione"});   
 });
-
+// authlogin   POST
+app.get("/authlogin", function(req,res) {
+ res.render("start.html",{title:"Autenticazione"});   
+});
 
 
 app.listen(process.env.PORT);
